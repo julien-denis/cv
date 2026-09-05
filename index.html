@@ -140,6 +140,15 @@
   a.stat:hover{border-color:var(--bar);color:var(--bar)}
   a.stat::after{content:" ↗";opacity:.5;font-size:10px}
   .brand a.site{font-family:var(--mono);font-size:12px;color:var(--bar);text-decoration:none;border-bottom:1px solid currentColor;align-self:flex-start}
+  .brand a.casebtn{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    text-decoration:none;border:1px solid var(--bar);border-radius:3px;
+    padding:13px 15px;margin-top:4px;transition:.16s ease;
+    font-family:var(--mono);font-size:12px;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--bar);
+  }
+  .brand a.casebtn:hover{background:var(--bar);color:#15100B}
+  .brand a.casebtn span:last-child{font-size:15px;line-height:1}
 
   /* ---------------- work ---------------- */
   .worknav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
@@ -372,7 +381,7 @@
       <div class="stats">
         <a class="stat" href="https://www.tiktok.com/@julien_invest_" target="_blank" rel="noopener">TikTok 50,000</a><a class="stat" href="https://www.instagram.com/julien_invest/" target="_blank" rel="noopener">IG 2,200</a><a class="stat" href="https://www.youtube.com/@julien_invest_yt" target="_blank" rel="noopener">YT 2,000</a>
       </div>
-      <a class="site" href="case-julien-invest.html">Read the case study</a>
+      <a class="casebtn" href="case-julien-invest.html"><span>Read the case study</span><span>&rarr;</span></a>
       <a class="site" href="https://julieninvest.com/" target="_blank" rel="noopener">julieninvest.com</a>
     </article>
 

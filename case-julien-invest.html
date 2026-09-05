@@ -314,6 +314,31 @@
              font-size:22px;min-width:96px;font-variant-numeric:tabular-nums}
   .todo{border:1px dashed var(--accent);border-radius:4px;padding:16px 18px;margin:20px 0;
         font-family:var(--mono);font-size:12.5px;line-height:1.6;color:var(--accent)}
+
+  /* rythme : une section sur deux sur fond legerement releve */
+  .case.alt{background:var(--surface)}
+  /* frise chronologique */
+  .timeline{display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;
+            margin:0 -20px 8px;padding:0 20px 4px}
+  .timeline::-webkit-scrollbar{display:none}
+  .tl{flex:1 0 152px;background:var(--surface2);border:1px solid var(--rule);
+      border-top:2px solid var(--accent);border-radius:3px;padding:16px 15px;
+      display:flex;flex-direction:column;gap:6px}
+  .tl b{font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+        text-transform:uppercase;color:var(--accent)}
+  .tl span{font-size:14px;line-height:1.45;color:var(--muted)}
+  @media(min-width:820px){ .timeline{margin:0 0 8px;padding:0} .tl{flex:1 1 0} }
+  /* preuve visuelle */
+  .proof{margin:26px 0 6px}
+  .proof img{width:100%;border:1px solid var(--rule);border-radius:4px;display:block}
+  .proof figcaption{font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;
+                    color:var(--faint);margin-top:10px;line-height:1.5}
+  /* chiffre isole en respiration */
+  .bignum{display:flex;align-items:baseline;gap:16px;margin:28px 0;
+          padding:22px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+  .bignum b{font-family:var(--display);font-weight:800;color:var(--accent);
+            font-size:clamp(46px,9vw,68px);line-height:.9;letter-spacing:-.03em}
+  .bignum span{font-size:15.5px;line-height:1.5;color:var(--muted);max-width:34ch}
   @media(max-width:640px){
     .results b{min-width:74px;font-size:20px}
     .case p,.case .lede{max-width:none}
@@ -340,12 +365,22 @@
 </header>
 
 <section class="wrap case">
+  <div class="timeline">
+    <div class="tl"><b>2021</b><span>Launch, in the middle of the crypto bull run</span></div>
+    <div class="tl"><b>Year 1</b><span>10,000 followers</span></div>
+    <div class="tl"><b>Year 2</b><span>50,000 followers, and the first sale</span></div>
+    <div class="tl"><b>Year 3</b><span>Roughly 1,000 videos, one a day</span></div>
+    <div class="tl"><b>Now</b><span>Weekly, with the weight moving to YouTube</span></div>
+  </div>
+</section>
+
+<section class="wrap case">
   <h3>The starting point</h3>
   <p>It was 2021, in the middle of the crypto bull run. Money and attention were pouring into anything that explained investing, and I could see the window was open.</p>
   <p>I was already investing my own money, so I had a head start on the subject, and I kept learning as I published. Noticing that momentum mattered more than anything else I did afterwards. You do not create a wave like that. You spot it and you move.</p>
 </section>
 
-<section class="wrap case">
+<section class="wrap case alt">
   <h3>What I was actually after</h3>
   <p>Not followers. A community.</p>
   <p>The plan was to build in public: share what I was learning while I was learning it, and let people follow the process instead of a finished product. That framing shaped everything, because it meant I could start before I felt ready.</p>
@@ -355,10 +390,11 @@
   <h3>The method: publish every day, for three years</h3>
   <p>I published daily for three years, roughly a thousand videos, while teaching full time. That was 15 to 20 hours a week on top of the job, sustained because I genuinely enjoy the work.</p>
   <p>I tested every format going. What worked was putting myself in frame. In a niche where most accounts hide behind stock footage and a voiceover, being the person who says it out loud is the thing that separates you.</p>
+  <div class="bignum"><b>~1,000</b><span>videos published in three years, while teaching full time</span></div>
   <div class="keyline">Consistency was not a discipline problem. It was a format problem. Once the format was something I could produce in one take, publishing daily stopped being hard.</div>
 </section>
 
-<section class="wrap case">
+<section class="wrap case alt">
   <h3>The decision that changed the output</h3>
   <p>Early on I spent a lot of time on visual polish. I stopped, and moved that effort into storytelling: structure, hook, payoff.</p>
   <p>This is a rule, not laziness. In personal finance people come for the substance, so the form can be plain. On my travel brand Ju.en.vie I do the exact opposite, because travel and sport are judged on how they look before anyone reads a word.</p>
@@ -370,9 +406,13 @@
   <p>I built on TikTok because I understand how virality works there. From a standing start it is the fastest place to get reach, and it took the account to 50,000.</p>
   <p>I am now shifting weight to YouTube. It is slower, but the content keeps working for months instead of days, and in personal finance it carries more authority. TikTok won the audience. YouTube is what keeps it.</p>
   <p>Publishing went from daily to once a week when the goal changed from reach to depth.</p>
+  <figure class="proof">
+    <img src="assets/work/thumb-3.jpg" alt="YouTube thumbnail for Julien Invest" loading="lazy">
+    <figcaption>A YouTube thumbnail. This is where the visual effort goes now, because the platform rewards it and the content has to last.</figcaption>
+  </figure>
 </section>
 
-<section class="wrap case">
+<section class="wrap case alt">
   <h3>Results</h3>
   <ul class="results">
     <li><b>54,200</b><span>followers across TikTok (50,000), Instagram (2,200) and YouTube (2,000)</span></li>
@@ -392,7 +432,7 @@
   <p>That reframes the format choice completely. Putting myself in frame was not a content preference. It was the commercial decision, I just did not know it at the time.</p>
 </section>
 
-<section class="wrap case">
+<section class="wrap case alt">
   <h3>What I would do differently</h3>
   <p>Both of my mistakes were commercial, not editorial.</p>
   <p>I would launch paid products far sooner. Two years passed between opening the account and my first sale. I spent that whole time building an audience before asking it for anything, and the patience cost me more than it earned.</p>
