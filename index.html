@@ -89,6 +89,14 @@
     margin:0 0 26px;max-width:16ch;text-wrap:balance;
   }
   h1 em{font-style:italic;font-weight:400;color:var(--accent)}
+  .rolelead{
+    font-family:var(--mono);font-size:clamp(13px,1.9vw,15px);letter-spacing:.13em;
+    text-transform:uppercase;color:var(--ink);margin:0 0 16px;
+  }
+  .seeking{
+    font-size:15.5px;line-height:1.55;color:var(--faint);max-width:48ch;
+    margin:-16px 0 30px;padding-left:14px;border-left:2px solid var(--accent);
+  }
   .hero p{font-size:clamp(17px,2.3vw,21px);color:var(--muted);max-width:56ch;margin:0 0 34px}
   .cta{display:flex;flex-wrap:wrap;gap:12px}
   .btn{
@@ -234,6 +242,11 @@
   .strip figcaption{padding:0}
   .strip figcaption span{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--faint);line-height:1.4}
 
+  .story{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:4px;overflow:hidden}
+  .st{background:var(--surface);padding:20px;display:grid;gap:6px;grid-template-columns:1fr}
+  @media(min-width:680px){ .st{grid-template-columns:150px 1fr;gap:24px;align-items:baseline} }
+  .st b{font-family:var(--mono);font-size:11.5px;font-weight:500;text-transform:uppercase;letter-spacing:.12em;color:var(--accent)}
+  .st span{font-size:15px;line-height:1.55;color:var(--muted)}
   /* ---------------- contact ---------------- */
   .contact h2{max-width:18ch}
   .clinks{display:flex;flex-wrap:wrap;gap:12px 34px;margin:26px 0 34px}
@@ -253,11 +266,11 @@
     .brandmark{display:none}
     .navin{padding-top:10px;padding-bottom:10px}
     .navlinks{
-      display:flex;flex-wrap:nowrap;gap:20px;width:100%;
+      display:flex;flex-wrap:nowrap;gap:14px;width:100%;
       overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;
     }
     .navlinks::-webkit-scrollbar{display:none}
-    .navlinks a{font-size:12px;white-space:nowrap;padding:8px 0;letter-spacing:.09em}
+    .navlinks a{font-size:11.5px;white-space:nowrap;padding:8px 0;letter-spacing:.06em}
     /* les ancres ne passent plus sous la barre collante */
     section,header.hero{scroll-margin-top:58px}
 
@@ -316,6 +329,7 @@
       <a href="#work">Work</a>
       <a href="#system">System</a>
       <a href="#skills">Skills</a>
+      <a href="#story">Path</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
@@ -324,11 +338,13 @@
 <header class="wrap hero" id="top">
  <div class="heroin">
   <div>
-  <div class="status"><span class="dot"></span><span class="eyebrow">Sydney · available now</span></div>
+  <div class="status"><span class="dot"></span><span class="eyebrow">Sydney &middot; available now</span></div>
+  <p class="rolelead">Content Creator &amp; Growth Marketer</p>
   <h1>I build brands and the <em>systems</em> that grow them.</h1>
   <p>Two French media brands, a Paris running club, and the production system behind all three. I do the positioning, the design system, the content and the selling. Native French, fluent English, based in Sydney.</p>
+  <p class="seeking">Looking for content, social media and growth roles in Sydney. Employed or freelance.</p>
   <div class="cta">
-    <a class="btn btn-1" href="mailto:julien.denis46@gmail.com?subject=Role%20enquiry">Hire me</a>
+    <a class="btn btn-1" href="mailto:julien.denis46@gmail.com?subject=Role%20enquiry">Get in touch</a>
     <a class="btn btn-2" href="assets/CV_Julien_DENIS_Content_Growth.pdf" download="CV_Julien_Denis.pdf">Download CV</a>
     <a class="btn btn-3" href="mailto:julien.denis46@gmail.com?subject=Freelance%20enquiry">Freelance enquiry</a>
   </div>
@@ -371,7 +387,7 @@
 
     <article class="brand" style="--bar:#C8B4E8">
       <h3>Julien Invest</h3>
-      <p class="role">Founder · 2021 to now</p>
+      <p class="role">Founder and Content Lead · 2021 to now</p>
       <p>Investing explained simply, for French speakers aged 20 to 35.</p>
       <ul>
         <li>Grew to 54,200 followers, 50,000 of them on TikTok, in a niche most creators avoid.</li>
@@ -387,7 +403,7 @@
 
     <article class="brand" style="--bar:#E8601C">
       <h3>Ju.en.vie</h3>
-      <p class="role">Founder · 2026 to now</p>
+      <p class="role">Founder and Content Creator · 2026 to now</p>
       <p>Endurance sport and travel, documented for real rather than staged.</p>
       <ul>
         <li>Grew to 15,500 followers across TikTok and Instagram in under a year.</li>
@@ -402,7 +418,7 @@
 
     <article class="brand" style="--bar:#6d879a">
       <h3>CIEL BLEU</h3>
-      <p class="role">Content lead · 2024 to 2026</p>
+      <p class="role">Content and Community Lead · 2024 to 2026</p>
       <p>A Paris running collective. Not a competition club, and the voice had to sound like it.</p>
       <ul>
         <li>Grew the account to 4,000 followers supporting 150 paying members this season.</li>
@@ -493,7 +509,8 @@
 <section class="wrap" id="system">
   <p class="eyebrow">How it gets made</p>
   <h2>How I keep them separate.</h2>
-  <p class="sec-lede">I built a routed content system that loads only what a given task needs and enforces each brand's rules automatically. It is why everything still looks right even when I publish a lot.</p>
+  <p class="sec-lede">I use AI to publish faster without the brands drifting into each other. Each one has its rules written down once, and everything I produce is held to them automatically. In practice it means more output, and none of the sludge that usually comes with it.</p>
+  <p class="sec-lede" style="margin-bottom:22px">Here is what that looks like when I sit down to make something.</p>
 
   <div class="tblwrap">
     <table>
@@ -518,17 +535,31 @@
 </section>
 
 <section class="wrap" id="skills">
-  <p class="eyebrow">Capabilities</p>
+  <p class="eyebrow">What I bring to a team</p>
   <h2>What I actually do.</h2>
+  <p class="sec-lede">I have run every part of a content operation alone, so I know what each part costs and where it breaks.</p>
   <div class="caps">
-    <div class="cap"><b>Growth</b><span>Audience building, offer and funnel design, partnership outreach and negotiation, retention</span></div>
+    <div class="cap"><b>End to end</b><span>I take a content idea from strategy to publication on my own, without waiting on anyone</span></div>
+    <div class="cap"><b>Growth</b><span>Audience building from zero, offer and funnel design, partnership outreach and negotiation</span></div>
     <div class="cap"><b>Content</b><span>Short form video, YouTube long form, Instagram carousels, thumbnails, stories</span></div>
     <div class="cap"><b>Copy</b><span>Sales pages, email sequences, video scripts, social copy. French native, English fluent</span></div>
+    <div class="cap"><b>Commercial</b><span>I know what content is for. I have sold a course, closed 7 partnerships and grown a paying membership</span></div>
     <div class="cap"><b>Design</b><span>Brand systems, design tokens, decks, documents, HTML layout</span></div>
-    <div class="cap"><b>AI and automation</b><span>Agentic workflows, skill and prompt architecture, AI assisted production pipelines</span></div>
-    <div class="cap"><b>Tools</b><span>Claude Code, Codex, Nano Banana, Canva, CapCut, Système.io</span></div>
-    <div class="cap"><b>Background</b><span>Five years teaching physical education. Marathon runner, 3h34. Lifeguard, five seasons</span></div>
+    <div class="cap"><b>AI and automation</b><span>I use AI to publish faster without letting the brands drift apart</span></div>
+    <div class="cap"><b>Tools</b><span>Claude Code, Codex, Nano Banana, Canva, CapCut, Syst&egrave;me.io</span></div>
   </div>
+</section>
+
+<section class="wrap" id="story">
+  <p class="eyebrow">How I got here</p>
+  <h2>The short version.</h2>
+  <div class="story">
+    <div class="st"><b>2018 to 2021</b><span>Sports science degree, then a teaching qualification. I start publishing on the side.</span></div>
+    <div class="st"><b>2021 to 2026</b><span>Five years teaching physical education full time, while building Julien Invest, then Ju.en.vie, then running CIEL BLEU's content. Evenings and weekends.</span></div>
+    <div class="st"><b>2026</b><span>The side work outgrows the day job. I leave teaching, run the Sydney Marathon, and move to Australia.</span></div>
+    <div class="st"><b>Now</b><span>Looking for a content, social or growth role in Sydney, with full working rights to August 2027.</span></div>
+  </div>
+  <p style="margin-top:26px;color:var(--muted);max-width:60ch">Teaching is not the thing I am selling, but it is why I can hold a room, explain something complicated in plain words, and hit a deadline every single week for five years.</p>
 </section>
 
 <section class="wrap contact" id="contact">
