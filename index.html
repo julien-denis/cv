@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Julien Denis · Growth and Content</title>
+<meta name="description" content="I build brands and the systems that grow them. Two French media brands, a Paris running club, 73,700 followers and a paying audience. Based in Sydney.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Julien Denis">
+<meta property="og:title" content="Julien Denis · Growth and Content">
+<meta property="og:description" content="I build brands and the systems that grow them. 150 paying members, 7 partnerships, 73,700 audience. Based in Sydney, full working rights.">
+<meta property="og:image" content="https://julien-denis.github.io/cv/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://julien-denis.github.io/cv/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Julien Denis · Growth and Content">
+<meta name="twitter:description" content="I build brands and the systems that grow them. Based in Sydney, full working rights.">
+<meta name="twitter:image" content="https://julien-denis.github.io/cv/assets/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=DM+Sans:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --ground:#15100B;
+    --surface:#1E1710;
+    --surface2:#271F16;
+    --rule:#33291D;
+    --ink:#F5EEE3;
+    --muted:#B3A38D;
+    --faint:#82715C;
+    --accent:#DA6B2F;
+    --accent-dim:#A84E1F;
+    --wash:rgba(218,107,47,.10);
+    --display:"Fraunces",Georgia,"Times New Roman",serif;
+    --body:"DM Sans","Helvetica Neue",Arial,sans-serif;
+    --mono:"DM Mono",ui-monospace,Menlo,monospace;
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--ground);color:var(--ink);
+    font-family:var(--body);font-size:16px;line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,44px)}
+
+  .eyebrow{
+    font-family:var(--mono);font-size:12px;text-transform:uppercase;
+    letter-spacing:.16em;color:var(--accent);
+  }
+  h2{
+    font-family:var(--display);font-weight:600;
+    font-size:clamp(28px,4.6vw,44px);line-height:1.08;letter-spacing:-.02em;
+    margin:0 0 14px;text-wrap:balance;
+  }
+  .sec-lede{font-size:clamp(17px,2.1vw,19.5px);color:var(--muted);max-width:60ch;margin:0 0 34px}
+  section{padding:clamp(58px,9vw,104px) 0;border-top:1px solid var(--rule)}
+
+  /* ---------------- nav ---------------- */
+  nav{
+    position:sticky;top:0;z-index:50;background:rgba(21,16,11,.86);
+    backdrop-filter:blur(10px);border-bottom:1px solid var(--rule);
+  }
+  .navin{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
+  .brandmark{font-family:var(--display);font-weight:800;font-size:19px;letter-spacing:-.02em;text-decoration:none}
+  .brandmark span{color:var(--accent)}
+  .navlinks{display:flex;gap:22px;flex-wrap:wrap}
+  .navlinks a{
+    font-family:var(--mono);font-size:12.5px;text-transform:uppercase;letter-spacing:.1em;
+    color:var(--muted);text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;
+  }
+  .navlinks a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+  @media(max-width:640px){ .navlinks{display:none} }
+
+  /* ---------------- hero ---------------- */
+  .hero{padding:clamp(30px,4.5vw,58px) 0 clamp(34px,5vw,54px);border-top:0}
+  .status{display:inline-flex;align-items:center;gap:9px;margin-bottom:20px}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);flex:none;
+       box-shadow:0 0 0 0 rgba(218,107,47,.6);animation:pulse 2.6s infinite}
+  @keyframes pulse{70%{box-shadow:0 0 0 11px rgba(218,107,47,0)}100%{box-shadow:0 0 0 0 rgba(218,107,47,0)}}
+  h1{
+    font-family:var(--display);font-weight:800;
+    font-size:clamp(38px,7.4vw,80px);line-height:1.0;letter-spacing:-.035em;
+    margin:0 0 26px;max-width:16ch;text-wrap:balance;
+  }
+  h1 em{font-style:italic;font-weight:400;color:var(--accent)}
+  .hero p{font-size:clamp(17px,2.3vw,21px);color:var(--muted);max-width:56ch;margin:0 0 34px}
+  .cta{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{
+    display:inline-flex;align-items:center;gap:9px;text-decoration:none;
+    font-family:var(--mono);font-size:13px;letter-spacing:.06em;text-transform:uppercase;
+    padding:14px 22px;border-radius:2px;border:1px solid var(--accent);transition:.18s ease;
+  }
+  .btn-1{background:var(--accent);color:#15100B;font-weight:500}
+  .btn-1:hover{background:#EE7A3C;border-color:#EE7A3C}
+  .btn-2{background:transparent;color:var(--accent)}
+  .btn-2:hover{background:var(--wash)}
+  .btn-3{background:transparent;color:var(--muted);border-color:var(--rule)}
+  .btn-3:hover{color:var(--ink);border-color:var(--faint)}
+
+  /* ---------------- metrics ---------------- */
+  .metrics{
+    display:grid;grid-template-columns:repeat(2,1fr);gap:1px;
+    background:var(--rule);border:1px solid var(--rule);border-radius:3px;overflow:hidden;
+  }
+  @media(min-width:820px){ .metrics{grid-template-columns:repeat(4,1fr)} }
+  .metric{background:var(--surface);padding:26px 22px;display:flex;flex-direction:column;gap:5px}
+  .metric b{
+    font-family:var(--display);font-weight:800;font-size:clamp(32px,4.6vw,44px);
+    line-height:1;letter-spacing:-.03em;color:var(--accent);font-variant-numeric:tabular-nums;
+  }
+  .metric .m-l{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink)}
+  .metric .m-s{font-size:13px;color:var(--faint);line-height:1.45}
+
+  /* ---------------- brands ---------------- */
+  .brands{display:grid;gap:16px;grid-template-columns:1fr}
+  @media(min-width:860px){ .brands{grid-template-columns:repeat(3,1fr)} }
+  .brand{
+    background:var(--surface);border:1px solid var(--rule);border-radius:4px;
+    padding:28px 24px;display:flex;flex-direction:column;gap:14px;
+    border-top:3px solid var(--bar);
+  }
+  .brand h3{font-family:var(--display);font-weight:600;font-size:26px;letter-spacing:-.02em;margin:0;line-height:1.1}
+  .brand .role{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spacing:.11em;color:var(--faint);margin:-8px 0 0}
+  .brand p{margin:0;font-size:14.8px;color:var(--muted);line-height:1.55}
+  .brand ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+  .brand li{font-size:14.5px;color:var(--muted);padding-left:16px;position:relative;line-height:1.5}
+  .brand li::before{content:"";position:absolute;left:0;top:.68em;width:7px;height:1px;background:var(--bar)}
+  .stats{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:6px}
+  .stat{
+    font-family:var(--mono);font-size:11px;letter-spacing:.03em;padding:5px 9px;
+    border:1px solid var(--rule);border-radius:2px;color:var(--ink);
+    text-decoration:none;display:inline-block;transition:.16s ease;
+  }
+  a.stat:hover{border-color:var(--bar);color:var(--bar)}
+  a.stat::after{content:" ↗";opacity:.5;font-size:10px}
+  .brand a.site{font-family:var(--mono);font-size:12px;color:var(--bar);text-decoration:none;border-bottom:1px solid currentColor;align-self:flex-start}
+
+  /* ---------------- work ---------------- */
+  .worknav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+  .tab{
+    font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.09em;
+    padding:9px 15px;border:1px solid var(--rule);border-radius:2px;background:transparent;
+    color:var(--muted);cursor:pointer;transition:.16s ease;
+  }
+  .tab:hover{color:var(--ink);border-color:var(--faint)}
+  .tab[aria-selected="true"]{background:var(--wash);border-color:var(--accent);color:var(--accent)}
+  .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+  .grid.wide{grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+  figure{margin:0;background:var(--surface);border:1px solid var(--rule);border-radius:4px;overflow:hidden;display:flex;flex-direction:column}
+  .shot{aspect-ratio:16/9;background:var(--surface2);position:relative;overflow:hidden}
+  .shot.portrait{aspect-ratio:4/5}
+  .shot img{width:100%;height:100%;object-fit:cover}
+  .shot.logo{background:#122B44;display:flex;align-items:center;justify-content:center;padding:14% 11%}
+  .shot.tile{background:linear-gradient(160deg,var(--tile),#08070A 210%);display:flex;align-items:center;justify-content:center}
+  .shot.tile::before{
+    content:attr(data-brand);font-family:var(--display);font-weight:600;font-size:clamp(17px,2.6vw,22px);
+    letter-spacing:-.015em;color:var(--tileaccent);text-align:center;padding:0 20px;line-height:1.2;
+  }
+  .shot.tile::after{
+    content:attr(data-kind);position:absolute;left:0;right:0;bottom:16px;text-align:center;
+    font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.16em;
+    color:var(--tileaccent);opacity:.6;
+  }
+  .shot.tile img{position:absolute;inset:0;z-index:1}
+  .shot.logo img{width:100%;height:auto;object-fit:contain}
+  .ph{
+    position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
+    font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);
+    background:repeating-linear-gradient(45deg,var(--surface2),var(--surface2) 9px,#2C2318 9px,#2C2318 18px);
+    text-align:center;padding:14px;
+  }
+  .ph b{color:var(--accent);font-weight:500;font-size:11px}
+  figcaption{padding:14px 16px;display:flex;flex-direction:column;gap:3px}
+  figcaption b{font-size:14.5px;font-weight:500}
+  figcaption span{font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.04em}
+  a.card{text-decoration:none;color:inherit}
+  a.card:hover .shot{outline:1px solid var(--accent);outline-offset:-1px}
+  a.card:hover figcaption b{color:var(--accent)}
+  [hidden]{display:none!important}
+
+  /* ---------------- system ---------------- */
+  .tblwrap{overflow-x:auto;border:1px solid var(--rule);border-radius:4px;background:var(--surface)}
+  table{border-collapse:collapse;width:100%;min-width:540px}
+  th,td{text-align:left;padding:14px 20px;border-bottom:1px solid var(--rule);font-size:14.5px;vertical-align:top}
+  tr:last-child td{border-bottom:0}
+  th{font-family:var(--mono);font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.12em;color:var(--faint)}
+  td.k{font-family:var(--mono);font-size:13px;color:var(--accent);white-space:nowrap}
+  td.v{color:var(--muted)}
+  .rules{display:grid;gap:12px;margin-top:16px;grid-template-columns:1fr}
+  @media(min-width:760px){ .rules{grid-template-columns:1fr 1fr} }
+  .r{background:var(--surface);border:1px solid var(--rule);border-radius:4px;padding:18px 20px}
+  .r b{display:block;font-size:15px;margin-bottom:4px}
+  .r span{font-size:14px;color:var(--muted);line-height:1.5}
+
+  /* ---------------- capabilities ---------------- */
+  .caps{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:4px;overflow:hidden}
+  .cap{background:var(--surface);padding:20px;display:grid;gap:6px;grid-template-columns:1fr}
+  @media(min-width:680px){ .cap{grid-template-columns:180px 1fr;gap:24px;align-items:baseline} }
+  .cap b{font-family:var(--mono);font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.12em;color:var(--accent)}
+  .cap span{font-size:15px;color:var(--muted)}
+
+
+  /* ---------------- photos ---------------- */
+  .pic{position:relative;border-radius:4px;overflow:hidden;border:1px solid var(--rule);background:var(--surface2)}
+  .pic img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.92) contrast(1.03)}
+  .pic::after{content:"";position:absolute;inset:0;background:var(--accent);opacity:.10;mix-blend-mode:soft-light;pointer-events:none}
+  .heroin{display:grid;grid-template-columns:1fr;gap:32px;align-items:end}
+  @media(min-width:900px){ .heroin{grid-template-columns:1.55fr .75fr;gap:56px} }
+  .hero-pic{aspect-ratio:4/5;width:100%;max-width:290px}
+  @media(max-width:899px){ .hero-pic{max-width:178px} }
+  @media(min-width:960px){
+    .rules{grid-template-columns:1fr 1fr 226px}
+    .rules .sys-pic{grid-column:3;grid-row:1 / span 2;height:100%}
+  }
+  @media(max-width:959px){ .rules .sys-pic{display:none} }
+  .strip{display:grid;gap:12px;grid-template-columns:repeat(3,1fr);margin-bottom:44px}
+  .strip figure{background:none;border:0;border-radius:0;gap:8px}
+  .strip .pic{aspect-ratio:3/4}
+  .strip figcaption{padding:0}
+  .strip figcaption span{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--faint);line-height:1.4}
+
+  /* ---------------- contact ---------------- */
+  .contact h2{max-width:18ch}
+  .clinks{display:flex;flex-wrap:wrap;gap:12px 34px;margin:26px 0 34px}
+  .clinks a{font-family:var(--display);font-weight:600;font-size:clamp(19px,2.8vw,26px);letter-spacing:-.015em;text-decoration:none;border-bottom:2px solid var(--rule);padding-bottom:2px}
+  .clinks a:hover{border-bottom-color:var(--accent);color:var(--accent)}
+  .visa{font-size:14.5px;color:var(--faint);max-width:52ch}
+  footer{border-top:1px solid var(--rule);padding:26px 0 44px}
+  .fin{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.06em}
+
+  a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap navin">
+    <a class="brandmark" href="#top">Julien Denis<span>.</span></a>
+    <div class="navlinks">
+      <a href="#brands">Brands</a>
+      <a href="#work">Work</a>
+      <a href="#system">System</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="wrap hero" id="top">
+ <div class="heroin">
+  <div>
+  <div class="status"><span class="dot"></span><span class="eyebrow">Sydney · available now</span></div>
+  <h1>I build brands and the <em>systems</em> that grow them.</h1>
+  <p>Two French media brands, a Paris running club, and the production system behind all three. I do the positioning, the design system, the content and the selling. Native French, fluent English, based in Sydney.</p>
+  <div class="cta">
+    <a class="btn btn-1" href="mailto:julien.denis46@gmail.com?subject=Role%20enquiry">Hire me</a>
+    <a class="btn btn-2" href="assets/CV_Julien_DENIS_Content_Growth.pdf" download="CV_Julien_Denis.pdf">Download CV</a>
+    <a class="btn btn-3" href="mailto:julien.denis46@gmail.com?subject=Freelance%20enquiry">Freelance enquiry</a>
+  </div>
+  </div>
+  <div class="pic hero-pic"><img src="assets/travail-ordi-ubud-960.jpg" alt="Julien Denis" loading="lazy"></div>
+ </div>
+</header>
+
+<section class="wrap" style="border-top:0;padding-top:0">
+  <div class="metrics">
+    <div class="metric">
+      <b>150</b>
+      <span class="m-l">Paying members</span>
+      <span class="m-s">Running club membership I grew and retained this season</span>
+    </div>
+    <div class="metric">
+      <b>7</b>
+      <span class="m-l">Partnerships closed</span>
+      <span class="m-s">Hotel and brand collaborations, prospected and negotiated direct</span>
+    </div>
+    <div class="metric">
+      <b>13</b>
+      <span class="m-l">Course students</span>
+      <span class="m-s">Paid enrolments on a course I built, priced and launched myself</span>
+    </div>
+    <div class="metric">
+      <b>73,700</b>
+      <span class="m-l">Combined audience</span>
+      <span class="m-s">Across TikTok, Instagram and YouTube on three brands</span>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="brands">
+  <p class="eyebrow">Brands</p>
+  <h2>Three brands. Three identities. One system.</h2>
+  <p class="sec-lede">Each one has its own documented palette, type scale, voice and editorial rules, and nothing bleeds between them. I built all three from zero.</p>
+
+  <div class="brands">
+
+    <article class="brand" style="--bar:#C8B4E8">
+      <h3>Julien Invest</h3>
+      <p class="role">Founder · 2021 to now</p>
+      <p>Investing explained simply, for French speakers aged 20 to 35.</p>
+      <ul>
+        <li>Grew to 54,200 followers, 50,000 of them on TikTok, in a niche most creators avoid.</li>
+        <li>Built, priced and launched a 147 EUR course with 13 paying students, plus 97 EUR coaching.</li>
+        <li>Own the full pipeline: research, script, design, thumbnail, publish, sell.</li>
+      </ul>
+      <div class="stats">
+        <a class="stat" href="https://www.tiktok.com/@julien_invest_" target="_blank" rel="noopener">TikTok 50,000</a><a class="stat" href="https://www.instagram.com/julien_invest/" target="_blank" rel="noopener">IG 2,200</a><a class="stat" href="https://www.youtube.com/@julien_invest_yt" target="_blank" rel="noopener">YT 2,000</a>
+      </div>
+      <a class="site" href="https://julieninvest.com/" target="_blank" rel="noopener">julieninvest.com</a>
+    </article>
+
+    <article class="brand" style="--bar:#E8601C">
+      <h3>Ju.en.vie</h3>
+      <p class="role">Founder · 2026 to now</p>
+      <p>Endurance sport and travel, documented for real rather than staged.</p>
+      <ul>
+        <li>Grew to 15,500 followers across TikTok and Instagram in under a year.</li>
+        <li>Closed 7 accommodation and brand partnerships: built the media kit, ran the outreach, negotiated the terms.</li>
+        <li>Publish a paid travel guide library alongside the free social content.</li>
+      </ul>
+      <div class="stats">
+        <a class="stat" href="https://www.tiktok.com/@juenvie" target="_blank" rel="noopener">TikTok 8,100</a><a class="stat" href="https://www.instagram.com/ju.en.vie/" target="_blank" rel="noopener">IG 7,400</a><span class="stat">7 deals</span>
+      </div>
+      <a class="site" href="https://juenvie.com/" target="_blank" rel="noopener">juenvie.com</a>
+    </article>
+
+    <article class="brand" style="--bar:#6d879a">
+      <h3>CIEL BLEU</h3>
+      <p class="role">Content lead · 2024 to 2026</p>
+      <p>A Paris running collective. Not a competition club, and the voice had to sound like it.</p>
+      <ul>
+        <li>Grew the account to 4,000 followers supporting 150 paying members this season.</li>
+        <li>Built the content system: brand charter, story templates, session and race day formats.</li>
+        <li>Hosted weekly sessions for 20 to 80 runners and turned them into the content pipeline.</li>
+      </ul>
+      <div class="stats">
+        <a class="stat" href="https://www.instagram.com/cielbleu_runningclub/" target="_blank" rel="noopener">IG 4,000</a><span class="stat">150 members</span>
+      </div>
+      <a class="site" href="https://www.instagram.com/cielbleu_runningclub/" target="_blank" rel="noopener">@cielbleu_runningclub</a>
+    </article>
+
+  </div>
+</section>
+
+<section class="wrap" id="work">
+  <p class="eyebrow">Selected work</p>
+  <h2>A few things I've made.</h2>
+  <p class="sec-lede">Thumbnails, video, sales assets and brand documents produced across the three brands.</p>
+
+  <div class="worknav" role="tablist">
+    <button class="tab" role="tab" aria-selected="true"  data-panel="p-video">Video</button>
+    <button class="tab" role="tab" aria-selected="false" data-panel="p-thumbs">Thumbnails</button>
+    <button class="tab" role="tab" aria-selected="false" data-panel="p-sales">Sales &amp; media kit</button>
+    <button class="tab" role="tab" aria-selected="false" data-panel="p-carousel">Carousels</button>
+  </div>
+
+  <div class="grid" id="p-video">
+    <a class="card" href="https://www.tiktok.com/@juenvie/video/7551538047901322518" target="_blank" rel="noopener"><figure>
+      <div class="shot"><img src="assets/work/tiktok-sapa.jpg" alt="Trek à Sapa, Vietnam" loading="lazy"></div>
+      <figcaption><b>Guide Sapa, Vietnam</b><span>Ju.en.vie · TikTok · 82,000 views</span></figcaption>
+    </figure></a>
+    <a class="card" href="https://www.youtube.com/watch?v=6RlzBOHq5c4" target="_blank" rel="noopener"><figure>
+      <div class="shot"><img src="https://img.youtube.com/vi/6RlzBOHq5c4/maxresdefault.jpg" alt="" loading="lazy"></div>
+      <figcaption><b>Combien tu devrais avoir épargné à ton âge</b><span>Julien Invest · YouTube</span></figcaption>
+    </figure></a>
+    <a class="card" href="https://www.youtube.com/watch?v=hJuoRNaGF3s" target="_blank" rel="noopener"><figure>
+      <div class="shot"><img src="https://img.youtube.com/vi/hJuoRNaGF3s/maxresdefault.jpg" alt="" loading="lazy"></div>
+      <figcaption><b>Trek de deux jours dans la jungle de Chiang Mai</b><span>Ju.en.vie · YouTube</span></figcaption>
+    </figure></a>
+    <a class="card" href="https://www.instagram.com/reels/DLX0hS-MjwZ/" target="_blank" rel="noopener"><figure>
+      <div class="shot logo"><img src="assets/work/instagram-lceb.png" alt="CIEL BLEU" loading="lazy"></div>
+      <figcaption><b>Reel du club</b><span>CIEL BLEU · Instagram · 36,000 views</span></figcaption>
+    </figure></a>
+  </div>
+
+  <div class="grid" id="p-thumbs" hidden>
+    <figure><div class="shot"><img src="assets/work/thumb-1.jpg" alt="Une journée avec Ganyar" loading="lazy"></div>
+      <figcaption><b>Une journée avec Ganyar</b><span>Ju.en.vie · Bali</span></figcaption></figure>
+    <figure><div class="shot"><img src="assets/work/thumb-2.jpg" alt="Se déplacer à Bali" loading="lazy"></div>
+      <figcaption><b>Se déplacer à Bali</b><span>Ju.en.vie · travel guide</span></figcaption></figure>
+    <figure><div class="shot"><img src="assets/work/thumb-3.jpg" alt="Protège tes cryptos" loading="lazy"></div>
+      <figcaption><b>Protège-les, tes cryptos ?</b><span>Julien Invest · finance</span></figcaption></figure>
+  </div>
+
+  <div class="grid wide" id="p-sales" hidden>
+    <a class="card" href="https://julieninvest.com/formation.html" target="_blank" rel="noopener"><figure>
+      <div class="shot tile" data-kind="Sales page" data-brand="De 0 à Investisseur" style="--tile:#1A1A4E;--tileaccent:#C8B4E8"></div>
+      <figcaption><b>Course sales page</b><span>Julien Invest · 147 EUR · 13 students ↗</span></figcaption>
+    </figure></a>
+    <a class="card" href="https://juenvie.com/mediakit.html" target="_blank" rel="noopener"><figure>
+      <div class="shot tile" data-kind="Media kit" data-brand="Ju.en.vie" style="--tile:#2C1F0E;--tileaccent:#E8601C"></div>
+      <figcaption><b>Partnership media kit</b><span>Ju.en.vie · used to close 7 deals ↗</span></figcaption>
+    </figure></a>
+    <a class="card" href="https://juenvie.com/ressources/accompagnement.html" target="_blank" rel="noopener"><figure>
+      <div class="shot tile" data-kind="Sales page" data-brand="Accompagnement voyage" style="--tile:#3A2A14;--tileaccent:#E8A05C"></div>
+      <figcaption><b>Travel coaching offer</b><span>Ju.en.vie · custom itinerary service ↗</span></figcaption>
+    </figure></a>
+  </div>
+
+  <div class="grid" id="p-carousel" hidden>
+    <a class="card" href="https://www.instagram.com/p/DcF_lq2EhUG/" target="_blank" rel="noopener"><figure>
+      <div class="shot portrait tile" data-kind="Carousel" data-brand="Julien Invest" style="--tile:#1A1A4E;--tileaccent:#C8B4E8"></div>
+      <figcaption><b>Instagram carousel</b><span>Julien Invest · view post ↗</span></figcaption>
+    </figure></a>
+    <a class="card" href="https://www.instagram.com/p/DcqQVu3IBK-/" target="_blank" rel="noopener"><figure>
+      <div class="shot portrait tile" data-kind="Carousel" data-brand="Ju.en.vie" style="--tile:#2C1F0E;--tileaccent:#E8601C"></div>
+      <figcaption><b>Instagram carousel</b><span>Ju.en.vie · view post ↗</span></figcaption>
+    </figure></a>
+    <a class="card" href="https://www.instagram.com/p/DWO33e2DMF_/" target="_blank" rel="noopener"><figure>
+      <div class="shot portrait tile" data-kind="Carousel" data-brand="CIEL BLEU" style="--tile:#122B44;--tileaccent:#b6cde0"></div>
+      <figcaption><b>Instagram carousel</b><span>CIEL BLEU · view post ↗</span></figcaption>
+    </figure></a>
+  </div>
+
+  </section>
+
+<section class="wrap" id="system">
+  <p class="eyebrow">How it gets made</p>
+  <h2>One person, three brands, nothing blurred.</h2>
+  <p class="sec-lede">I built a routed content system that loads only what a given task needs and enforces each brand's rules automatically. It is why the output stays consistent at volume.</p>
+
+  <div class="tblwrap">
+    <table>
+      <thead><tr><th scope="col">Task</th><th scope="col">What the system loads</th></tr></thead>
+      <tbody>
+        <tr><td class="k">Instagram carousel</td><td class="v">Brand tokens plus the carousel spec, then the export pipeline</td></tr>
+        <tr><td class="k">Video script</td><td class="v">Brand voice plus the short or long form structure</td></tr>
+        <tr><td class="k">Course module</td><td class="v">Pedagogy reference plus the deck and document templates</td></tr>
+        <tr><td class="k">Partnership outreach</td><td class="v">Prospecting reference plus the personalisation examples</td></tr>
+        <tr><td class="k">Any published text</td><td class="v">The editorial rules, always, on top of whatever else loaded</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="rules">
+    <div class="r"><b>Design tokens as code</b><span>Palette, type scale and layout declared once per brand, enforced on every asset it produces.</span></div>
+    <div class="r"><b>Hard brand separation</b><span>The finance world and the travel world cannot borrow each other's colours, voice or templates.</span></div>
+    <div class="r"><b>No invented data</b><span>A missing figure gets flagged, never guessed. Every number on this page is one I can evidence.</span></div>
+    <div class="r"><b>One call to action</b><span>Every deliverable carries exactly one ask. No stacking, no diluted intent.</span></div>
+    <div class="pic sys-pic"><img src="assets/coworking-960.jpg" alt="Julien at work" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="wrap" id="skills">
+  <p class="eyebrow">Capabilities</p>
+  <h2>What I actually do.</h2>
+  <div class="caps">
+    <div class="cap"><b>Growth</b><span>Audience building, offer and funnel design, partnership outreach and negotiation, retention</span></div>
+    <div class="cap"><b>Content</b><span>Short form video, YouTube long form, Instagram carousels, thumbnails, stories</span></div>
+    <div class="cap"><b>Copy</b><span>Sales pages, email sequences, video scripts, social copy. French native, English fluent</span></div>
+    <div class="cap"><b>Design</b><span>Brand systems, design tokens, decks, documents, HTML layout</span></div>
+    <div class="cap"><b>AI and automation</b><span>Agentic workflows, skill and prompt architecture, AI assisted production pipelines</span></div>
+    <div class="cap"><b>Tools</b><span>Claude Code, Codex, Nano Banana, Canva, CapCut, Système.io</span></div>
+    <div class="cap"><b>Background</b><span>Five years teaching physical education. Marathon runner, 3h34. Lifeguard, five seasons</span></div>
+  </div>
+</section>
+
+<section class="wrap contact" id="contact">
+  <div class="strip">
+    <figure><div class="pic"><img src="assets/australie-marathon-medaille-opera-800.jpg" alt="Sydney Marathon finisher medal at the Opera House" loading="lazy"></div>
+      <figcaption><span>Sydney Marathon · August 2026</span></figcaption></figure>
+    <figure><div class="pic"><img src="assets/australie-marathon-medaille-pont-800.jpg" alt="Sydney Marathon finisher at Circular Quay" loading="lazy"></div>
+      <figcaption><span>Finish line · Circular Quay</span></figcaption></figure>
+    <figure><div class="pic"><img src="assets/thailande-rooftop-bangkok-800.jpg" alt="Bangkok skyline" loading="lazy"></div>
+      <figcaption><span>Bangkok · on the Ju.en.vie route</span></figcaption></figure>
+  </div>
+  <p class="eyebrow">Contact</p>
+  <h2>Ready to join your team in Sydney.</h2>
+  <div class="clinks">
+    <a href="mailto:julien.denis46@gmail.com">julien.denis46@gmail.com</a>
+    <a href="https://www.linkedin.com/in/julien-denis-849541251/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://julieninvest.com/" target="_blank" rel="noopener">julieninvest.com</a>
+    <a href="https://juenvie.com/" target="_blank" rel="noopener">juenvie.com</a>
+    <a href="https://www.youtube.com/@julien_invest_yt" target="_blank" rel="noopener">YouTube</a>
+  </div>
+  <p class="visa">Working Holiday Visa, subclass 417, full working rights to August 2027. Open to employed roles and to freelance work under an ABN.</p>
+</section>
+
+<footer><div class="wrap fin">
+  <span>Julien Denis · Sydney, NSW</span>
+  <span>Built and maintained by me</span>
+</div></footer>
+
+<script>
+  var tabs = document.querySelectorAll('.tab');
+  tabs.forEach(function(t){
+    t.addEventListener('click', function(){
+      tabs.forEach(function(o){
+        o.setAttribute('aria-selected', String(o === t));
+        document.getElementById(o.dataset.panel).hidden = (o !== t);
+      });
+    });
+  });
+</script>
+</body>
+</html>
