@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script>document.documentElement.classList.add('js')</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Julien Denis · Growth and Content</title>
@@ -59,8 +60,8 @@
     font-size:clamp(28px,4.6vw,44px);line-height:1.08;letter-spacing:-.02em;
     margin:0 0 14px;text-wrap:balance;
   }
-  .sec-lede{font-size:clamp(17px,2.1vw,19.5px);color:var(--muted);max-width:60ch;margin:0 0 34px}
-  section{padding-top:clamp(58px,9vw,104px);padding-bottom:clamp(58px,9vw,104px);border-top:1px solid var(--rule)}
+  .sec-lede{font-size:clamp(17px,2.1vw,19.5px);color:var(--muted);max-width:60ch;margin:0 0 28px}
+  section{padding-top:clamp(44px,6vw,80px);padding-bottom:clamp(44px,6vw,80px);border-top:1px solid var(--rule)}
 
   /* ---------------- nav ---------------- */
   nav{
@@ -258,7 +259,7 @@
     .rules .sys-pic{grid-column:3;grid-row:1 / span 2;height:100%}
   }
   @media(max-width:959px){ .rules .sys-pic{display:none} }
-  .strip{display:grid;gap:12px;grid-template-columns:repeat(3,1fr);margin-bottom:44px}
+  .strip{display:grid;gap:12px;grid-template-columns:repeat(3,1fr);margin-bottom:32px}
   .strip figure{background:none;border:0;border-radius:0;gap:8px}
   .strip .pic{aspect-ratio:3/4}
   .strip figcaption{padding:0}
@@ -279,7 +280,30 @@
   .fin{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;font-family:var(--mono);font-size:11.5px;color:var(--faint);letter-spacing:.06em}
 
   a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+  /* ---------------- animations ---------------- */
+  .progress{position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--accent);transform-origin:0 50%;transform:scaleX(var(--p,0));pointer-events:none}
+  @keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+  @keyframes unveil{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+  @keyframes settle{from{transform:scale(1.08)}to{transform:scale(1)}}
+  .js .in-seq>*{opacity:0;animation:up .8s cubic-bezier(.2,.7,.2,1) forwards}
+  .js .in-seq>*:nth-child(1){animation-delay:.05s}.js .in-seq>*:nth-child(2){animation-delay:.14s}.js .in-seq>*:nth-child(3){animation-delay:.26s}
+  .js .in-seq>*:nth-child(4){animation-delay:.4s}.js .in-seq>*:nth-child(5){animation-delay:.5s}.js .in-seq>*:nth-child(6){animation-delay:.6s}
+  .js .hero-pic{animation:unveil 1.1s cubic-bezier(.7,0,.2,1) .25s both}
+  .js .hero-pic img{animation:settle 1.6s cubic-bezier(.2,.7,.2,1) .25s both}
+  .js .rv{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+  .js .rv.in{opacity:1;transform:none}
+  .btn{transition:background .18s ease,border-color .18s ease,color .18s ease,transform .18s ease}
+  .btn:hover{transform:translateY(-1px)}
+  a.card .shot img,.ji-shot img{transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+  a.card:hover .shot img,.ji-shot:hover img{transform:scale(1.03)}
+  .brand{transition:border-color .2s ease,transform .3s ease}
+  .brand:hover{transform:translateY(-3px)}
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+    .js .in-seq>*,.js .rv{opacity:1!important;transform:none!important}
+    .js .hero-pic{clip-path:none}
+    .progress{display:none}
+  }
 
   /* ---------------- mobile ---------------- */
   @media(max-width:640px){
@@ -329,7 +353,7 @@
     .strip .pic{aspect-ratio:4/5}
 
     /* densite generale : 9,4 ecrans de defilement, on resserre */
-    section{padding-top:46px;padding-bottom:46px}
+    section{padding-top:40px;padding-bottom:40px}
     .sec-lede{margin-bottom:26px;font-size:16.5px}
     h2{font-size:26px}
     .brand{padding:24px 20px;gap:12px}
@@ -344,6 +368,7 @@
 <body>
 
 <nav>
+  <span class="progress" aria-hidden="true"></span>
   <div class="wrap navin">
     <a class="brandmark" href="#top">Julien Denis<span>.</span></a>
     <div class="navlinks">
@@ -360,11 +385,11 @@
 <header class="wrap hero" id="top">
  <div class="heroin">
   <div>
-  <div class="status"><span class="dot"></span><span class="eyebrow">Based in Sydney &middot; open to relocation</span></div>
+  <div class="status"><span class="dot"></span><span class="eyebrow">Currently in Sydney &middot; Open to relocation &middot; Hybrid or remote</span></div>
   <p class="rolelead"><span class="nw">Content Creator</span> &middot; <span class="nw">Growth Marketer</span> &middot; <span class="nw">AI native Builder</span></p>
   <h1>I build brands and the <em>systems</em> that grow them.</h1>
-  <p>Two French media brands, a Paris running club, and the production system behind all three. I do the positioning, the content, the design and the growth. Native French, fluent English, currently based in Sydney and open to relocation.</p>
-  <p class="seeking">Open to on site, hybrid and remote opportunities. Employed or freelance.</p>
+  <p>Two French media brands, a Paris running club, and the production system behind all three. I do the positioning, the content, the design and the growth. Native French, fluent English.</p>
+  <p class="seeking">Currently based in Sydney, Australia. Open to Paris and other locations, as well as hybrid and remote opportunities.</p>
   <div class="cta">
     <a class="btn btn-1" href="mailto:julien.denis46@gmail.com?subject=Role%20enquiry">Get in touch</a>
     <a class="btn btn-2" href="assets/CV_Julien_DENIS_Content_Growth.pdf" download="CV_Julien_Denis.pdf">Download CV</a>
@@ -388,9 +413,9 @@
       <span class="m-s">Hotel and brand collaborations, prospected and negotiated direct</span>
     </div>
     <div class="metric">
-      <b>13</b>
-      <span class="m-l">Course students</span>
-      <span class="m-s">Paid enrolments on a course I built, priced and launched myself</span>
+      <b>86</b>
+      <span class="m-l">Articles published</span>
+      <span class="m-s">Long form finance guides on julieninvest.com, alongside the video content</span>
     </div>
     <div class="metric">
       <b>73,700</b>
@@ -418,7 +443,7 @@
           <div><b>50K</b><span>on TikTok</span></div>
           <div><b>2K</b><span>on YouTube</span></div>
         </div>
-        <p>A 147 EUR course with 13 paying students, 97 EUR coaching and 13 free financial simulators. I own the full pipeline: research, script, design, thumbnail, publish, sell.</p>
+        <p>A financial education course I built and sold, one to one coaching and 13 free financial simulators. I own the full pipeline: research, script, design, thumbnail, publish, sell.</p>
         <div class="stats">
           <a class="stat" href="https://www.tiktok.com/@julien_invest_" target="_blank" rel="noopener">TikTok 50,000</a><a class="stat" href="https://www.instagram.com/julien_invest/" target="_blank" rel="noopener">IG 2,200</a><a class="stat" href="https://www.youtube.com/@julien_invest_yt" target="_blank" rel="noopener">YT 2,000</a>
         </div>
@@ -507,7 +532,7 @@
   <div class="grid wide" id="p-sales" hidden>
     <a class="card" href="https://julieninvest.com/formation.html" target="_blank" rel="noopener"><figure>
       <div class="shot tile" data-kind="Sales page" data-brand="De 0 à Investisseur" style="--tile:#1A1A4E;--tileaccent:#C8B4E8"></div>
-      <figcaption><b>Course sales page</b><span>Julien Invest · 147 EUR · 13 students ↗</span></figcaption>
+      <figcaption><b>Course sales page</b><span>Julien Invest · De 0 à Investisseur ↗</span></figcaption>
     </figure></a>
     <a class="card" href="https://juenvie.com/mediakit.html" target="_blank" rel="noopener"><figure>
       <div class="shot tile" data-kind="Media kit" data-brand="Ju.en.vie" style="--tile:#2C1F0E;--tileaccent:#E8601C"></div>
@@ -628,6 +653,52 @@
       });
     });
   });
+
+  (function(){
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var hero = document.querySelector('.heroin > div'); if(hero) hero.classList.add('in-seq');
+
+    /* barre de progression de lecture */
+    var bar = document.querySelector('.progress');
+    if(bar && !reduce){
+      var ticking = false;
+      var upd = function(){ var h = document.documentElement; bar.style.setProperty('--p', (h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight)).toFixed(4)); ticking = false; };
+      window.addEventListener('scroll', function(){ if(!ticking){ ticking = true; requestAnimationFrame(upd); } }, {passive:true});
+      upd();
+    }
+
+    /* apparition des blocs, en cascade dans les grilles */
+    var sel = 'section > .eyebrow, section > h2, section > .sec-lede, .brands > article, .grid > *, .tblwrap, .rules > *, .caps > .cap, .story > .st, .strip > figure, .contact .cta, .metrics > .metric';
+    var els = document.querySelectorAll(sel);
+    els.forEach(function(el){
+      el.classList.add('rv');
+      var p = el.parentElement, kids = Array.prototype.indexOf.call(p.children, el);
+      if(/brands|grid|rules|caps|story|strip|metrics/.test(p.className)) el.style.transitionDelay = (kids * 70) + 'ms';
+    });
+
+    /* compteurs */
+    function countUp(el){
+      var raw = el.textContent.trim(), target = parseInt(raw.replace(/,/g, ''), 10), comma = raw.indexOf(',') > -1;
+      if(isNaN(target) || reduce) return;
+      var t0 = null, dur = 1400;
+      function fmt(v){ var n = Math.round(v); return comma ? n.toLocaleString('en-US') : String(n); }
+      function step(ts){ if(!t0) t0 = ts; var k = Math.min(1, (ts - t0) / dur); el.textContent = fmt(target * (1 - Math.pow(1 - k, 3))); if(k < 1) requestAnimationFrame(step); else el.textContent = raw; }
+      requestAnimationFrame(step);
+    }
+
+    if('IntersectionObserver' in window){
+      var io = new IntersectionObserver(function(es){
+        es.forEach(function(en){
+          if(!en.isIntersecting) return;
+          en.target.classList.add('in'); io.unobserve(en.target);
+          if(en.target.classList.contains('metric')) countUp(en.target.querySelector('b'));
+        });
+      }, {rootMargin:'0px 0px -6% 0px'});
+      els.forEach(function(el){ io.observe(el); });
+    } else {
+      els.forEach(function(el){ el.classList.add('in'); });
+    }
+  })();
 </script>
 </body>
 </html>
