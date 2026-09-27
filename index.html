@@ -4,20 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Julien Denis · Growth and Content</title>
-<meta name="description" content="I build brands and the systems that grow them. Two French media brands, a Paris running club, 73,700 followers and a paying audience. Based in Sydney.">
+<meta name="description" content="I build brands and the systems that grow them. Two French media brands, a Paris running club, 73,700 followers and a paying audience. Based in Sydney, open to relocation.">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Julien Denis">
 <meta property="og:title" content="Julien Denis · Growth and Content">
-<meta property="og:description" content="I build brands and the systems that grow them. 150 paying members, 7 partnerships, 73,700 audience. Based in Sydney, full working rights.">
+<meta property="og:description" content="I build brands and the systems that grow them. 150 paying members, 7 partnerships, 73,700 audience. Currently in Sydney, open to relocation, hybrid and remote.">
 <meta property="og:image" content="https://julien-denis.github.io/cv/assets/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://julien-denis.github.io/cv/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Julien Denis · Growth and Content">
-<meta name="twitter:description" content="I build brands and the systems that grow them. Based in Sydney, full working rights.">
+<meta name="twitter:description" content="I build brands and the systems that grow them. Currently in Sydney, open to relocation.">
 <meta name="twitter:image" content="https://julien-denis.github.io/cv/assets/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +48,7 @@
   }
   img{max-width:100%;display:block}
   a{color:inherit}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,44px)}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding-left:clamp(20px,5vw,44px);padding-right:clamp(20px,5vw,44px)}
 
   .eyebrow{
     font-family:var(--mono);font-size:12px;text-transform:uppercase;
@@ -93,6 +93,7 @@
     font-family:var(--mono);font-size:clamp(13px,1.9vw,15px);letter-spacing:.13em;
     text-transform:uppercase;color:var(--ink);margin:0 0 16px;
   }
+  .rolelead .nw{white-space:nowrap}
   .seeking{
     font-size:15.5px;line-height:1.55;color:var(--faint);max-width:48ch;
     margin:-16px 0 30px;padding-left:14px;border-left:2px solid var(--accent);
@@ -127,7 +128,28 @@
 
   /* ---------------- brands ---------------- */
   .brands{display:grid;gap:16px;grid-template-columns:1fr}
-  @media(min-width:860px){ .brands{grid-template-columns:repeat(3,1fr)} }
+  @media(min-width:760px){ .brands{grid-template-columns:repeat(2,1fr)} }
+  /* Julien Invest en tete, sur toute la largeur */
+  .brand.feature{grid-column:1 / -1;display:grid;grid-template-columns:1fr;gap:26px;padding:0;overflow:hidden}
+  .ji-shot{display:block;border-bottom:1px solid var(--rule);background:var(--surface2)}
+  .ji-shot img{width:100%;height:100%;object-fit:cover;object-position:top left;aspect-ratio:1200/767}
+  .ji-body{padding:0 24px 28px;display:flex;flex-direction:column;gap:14px}
+  @media(min-width:900px){
+    .brand.feature{grid-template-columns:1.15fr 1fr;gap:0}
+    .ji-shot{border-bottom:0;border-right:1px solid var(--rule)}
+    .ji-body{padding:30px 30px 28px}
+  }
+  .ji-nums{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+  .ji-nums div{padding:14px 0;display:flex;flex-direction:column;gap:4px}
+  .ji-nums div+div{padding-left:16px;border-left:1px solid var(--rule)}
+  .ji-nums b{font-family:var(--display);font-weight:800;font-size:clamp(26px,3.2vw,34px);line-height:1;letter-spacing:-.03em;color:var(--bar)}
+  .ji-nums span{font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.12em;color:var(--faint)}
+  .ji-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 20px;align-items:center}
+  .finlink{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--faint);text-decoration:none}
+  .finlink:hover{color:var(--accent)}
+  .mailline{margin:20px 0 26px;font-family:var(--mono);font-size:13px}
+  .mailline a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--rule)}
+  .mailline a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   .brand{
     background:var(--surface);border:1px solid var(--rule);border-radius:4px;
     padding:28px 24px;display:flex;flex-direction:column;gap:14px;
@@ -338,11 +360,11 @@
 <header class="wrap hero" id="top">
  <div class="heroin">
   <div>
-  <div class="status"><span class="dot"></span><span class="eyebrow">Sydney &middot; available now</span></div>
-  <p class="rolelead">Content Creator &amp; Growth Marketer</p>
+  <div class="status"><span class="dot"></span><span class="eyebrow">Based in Sydney &middot; open to relocation</span></div>
+  <p class="rolelead"><span class="nw">Content Creator</span> &middot; <span class="nw">Growth Marketer</span> &middot; <span class="nw">AI native Builder</span></p>
   <h1>I build brands and the <em>systems</em> that grow them.</h1>
-  <p>Two French media brands, a Paris running club, and the production system behind all three. I do the positioning, the design system, the content and the selling. Native French, fluent English, based in Sydney.</p>
-  <p class="seeking">Looking for content, social media and growth roles in Sydney. Employed or freelance.</p>
+  <p>Two French media brands, a Paris running club, and the production system behind all three. I do the positioning, the content, the design and the growth. Native French, fluent English, currently based in Sydney and open to relocation.</p>
+  <p class="seeking">Open to on site, hybrid and remote opportunities. Employed or freelance.</p>
   <div class="cta">
     <a class="btn btn-1" href="mailto:julien.denis46@gmail.com?subject=Role%20enquiry">Get in touch</a>
     <a class="btn btn-2" href="assets/CV_Julien_DENIS_Content_Growth.pdf" download="CV_Julien_Denis.pdf">Download CV</a>
@@ -353,7 +375,7 @@
  </div>
 </header>
 
-<section class="wrap" style="border-top:0;padding-top:0">
+<section class="wrap" style="border-top:0;padding-top:0;padding-bottom:clamp(40px,6vw,64px)">
   <div class="metrics">
     <div class="metric">
       <b>150</b>
@@ -381,24 +403,31 @@
 <section class="wrap" id="brands">
   <p class="eyebrow">Brands</p>
   <h2>The three brands I run.</h2>
-  <p class="sec-lede">Each one has its own documented palette, type scale, voice and editorial rules, and I never mix them up. I built all three from zero.</p>
+  <p class="sec-lede">Each one has its own documented palette, type scale, voice and editorial rules. I built all three from zero.</p>
 
   <div class="brands">
 
-    <article class="brand" style="--bar:#C8B4E8">
-      <h3>Julien Invest</h3>
-      <p class="role">Founder and Content Lead · 2021 to now</p>
-      <p>Investing explained simply, for French speakers aged 20 to 35.</p>
-      <ul>
-        <li>Grew to 54,200 followers, 50,000 of them on TikTok, in a niche most creators avoid.</li>
-        <li>Built, priced and launched a 147 EUR course with 13 paying students, plus 97 EUR coaching.</li>
-        <li>Own the full pipeline: research, script, design, thumbnail, publish, sell.</li>
-      </ul>
-      <div class="stats">
-        <a class="stat" href="https://www.tiktok.com/@julien_invest_" target="_blank" rel="noopener">TikTok 50,000</a><a class="stat" href="https://www.instagram.com/julien_invest/" target="_blank" rel="noopener">IG 2,200</a><a class="stat" href="https://www.youtube.com/@julien_invest_yt" target="_blank" rel="noopener">YT 2,000</a>
+    <article class="brand feature" style="--bar:#C8B4E8">
+      <a class="ji-shot" href="https://julieninvest.com/" target="_blank" rel="noopener"><img src="assets/finary/julieninvest-site.webp" width="1200" height="767" alt="Homepage of julieninvest.com" loading="lazy"></a>
+      <div class="ji-body">
+        <h3>Julien Invest</h3>
+        <p class="role">Founder and Content Lead · 2021 to now</p>
+        <p>Investing explained simply, for French speakers aged 25 to 35. My strongest project, built from zero while teaching full time.</p>
+        <div class="ji-nums">
+          <div><b>54.2K</b><span>followers</span></div>
+          <div><b>50K</b><span>on TikTok</span></div>
+          <div><b>2K</b><span>on YouTube</span></div>
+        </div>
+        <p>A 147 EUR course with 13 paying students, 97 EUR coaching and 13 free financial simulators. I own the full pipeline: research, script, design, thumbnail, publish, sell.</p>
+        <div class="stats">
+          <a class="stat" href="https://www.tiktok.com/@julien_invest_" target="_blank" rel="noopener">TikTok 50,000</a><a class="stat" href="https://www.instagram.com/julien_invest/" target="_blank" rel="noopener">IG 2,200</a><a class="stat" href="https://www.youtube.com/@julien_invest_yt" target="_blank" rel="noopener">YT 2,000</a>
+        </div>
+        <a class="casebtn" href="case-julien-invest.html"><span>Read the case study</span><span>&rarr;</span></a>
+        <div class="ji-foot">
+          <a class="site" href="https://julieninvest.com/" target="_blank" rel="noopener">julieninvest.com</a>
+          <a class="finlink" href="finary/">Applying to Finary &rarr;</a>
+        </div>
       </div>
-      <a class="casebtn" href="case-julien-invest.html"><span>Read the case study</span><span>&rarr;</span></a>
-      <a class="site" href="https://julieninvest.com/" target="_blank" rel="noopener">julieninvest.com</a>
     </article>
 
     <article class="brand" style="--bar:#E8601C">
@@ -510,8 +539,7 @@
 <section class="wrap" id="system">
   <p class="eyebrow">How it gets made</p>
   <h2>How I keep them separate.</h2>
-  <p class="sec-lede">I use AI to publish faster without the brands drifting into each other. Each one has its rules written down once, and everything I produce is held to them automatically. In practice it means more output, and none of the sludge that usually comes with it.</p>
-  <p class="sec-lede" style="margin-bottom:22px">Here is what that looks like when I sit down to make something.</p>
+  <p class="sec-lede">I use AI to publish faster without letting the brands drift apart. Each brand's rules are written down once, as design tokens and editorial specs, and everything I produce is held to them. Built with Claude Code and Codex.</p>
 
   <div class="tblwrap">
     <table>
@@ -557,8 +585,8 @@
   <div class="story">
     <div class="st"><b>2018 to 2021</b><span>Sports science degree, then a teaching qualification. I start publishing on the side.</span></div>
     <div class="st"><b>2021 to 2026</b><span>Five years teaching physical education full time, while building Julien Invest, then Ju.en.vie, then running CIEL BLEU's content. Evenings and weekends.</span></div>
-    <div class="st"><b>2026</b><span>The side work outgrows the day job. I leave teaching, run the Sydney Marathon, and move to Australia.</span></div>
-    <div class="st"><b>Now</b><span>Looking for a content, social or growth role in Sydney, with full working rights to August 2027.</span></div>
+    <div class="st"><b>2026</b><span>The side work outgrows the day job. I leave teaching to work full time on content and digital projects, run the Sydney Marathon, and move to Australia.</span></div>
+    <div class="st"><b>2026 to now</b><span>Based in Sydney. Looking for the next content, growth or creator role, wherever the right team is.</span></div>
   </div>
   <p style="margin-top:26px;color:var(--muted);max-width:60ch">Teaching is not the thing I am selling, but it is why I can hold a room, explain something complicated in plain words, and hit a deadline every single week for five years.</p>
 </section>
@@ -573,18 +601,20 @@
       <figcaption><span>Bangkok · on the Ju.en.vie route</span></figcaption></figure>
   </div>
   <p class="eyebrow">Contact</p>
-  <h2>Ready to join your team in Sydney.</h2>
-  <div class="clinks">
-    <a href="mailto:julien.denis46@gmail.com">julien.denis46@gmail.com</a>
-    <a href="https://www.linkedin.com/in/julien-denis-849541251/" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="https://julieninvest.com/" target="_blank" rel="noopener">julieninvest.com</a>
-    <a href="https://juenvie.com/" target="_blank" rel="noopener">juenvie.com</a>
+  <h2>Open to the right opportunity.</h2>
+  <p class="sec-lede" style="margin-bottom:28px">Ready to join the right team, wherever it is. Currently in Sydney &middot; open to relocation, hybrid and remote work.</p>
+  <div class="cta">
+    <a class="btn btn-1" href="mailto:julien.denis46@gmail.com">Email</a>
+    <a class="btn btn-3" href="https://www.linkedin.com/in/julien-denis-849541251/" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn btn-3" href="https://julieninvest.com/" target="_blank" rel="noopener">Julien Invest</a>
+    <a class="btn btn-2" href="assets/CV_Julien_DENIS_Content_Growth.pdf" download="CV_Julien_Denis.pdf">CV</a>
   </div>
-  <p class="visa">Working Holiday Visa, subclass 417, full working rights to August 2027. Open to employed roles and to freelance work under an ABN.</p>
+  <p class="mailline"><a href="mailto:julien.denis46@gmail.com">julien.denis46@gmail.com</a></p>
+  <p class="visa">For employers in Australia: Working Holiday Visa, subclass 417, full working rights to August 2027. Employed roles or freelance under an ABN.</p>
 </section>
 
 <footer><div class="wrap fin">
-  <span>Julien Denis · Sydney, NSW</span>
+  <span>Julien Denis · Currently in Sydney</span>
   <span>Built and maintained by me</span>
 </div></footer>
 
